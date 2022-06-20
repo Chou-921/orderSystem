@@ -1,0 +1,82 @@
+@import url(../CSS/subBar.css);
+@import url(../CSS/navBar.css);
+body {
+    background: url(../image/background-user2.jpg) no-repeat top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#content{
+    position:fixed;
+    top: -20px;
+    right: 20px;
+    bottom: 20px;
+    left: 300px;
+    background: rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    padding: 10px;
+    overflow-x: hidden;
+    margin-top: 100px;
+}
+
+.foodList{
+    font-size: 0;
+    float: left;
+}
+.foodList li{
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.foodList img{
+    width: 350px;
+    height: 250px;
+    cursor: pointer;
+}
+.recommend{
+    position:absolute;
+    left: 5px;
+    top: 5px;
+    font-size: 50px;
+    color: #ff8400;
+}
+.foodList .bar{
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    background: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    justify-content: space-between;
+
+    position:absolute;
+    bottom: 0;
+}
+.foodList .bar p{
+    display: flex;
+    align-items: center;
+}
+.foodList .rmb{
+    font-size: 14px;
+}
+.foodList .price{
+    color: #f0e184;
+    margin: 0 10px;
+}
+.foodList .bar button{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background: #ff8400;
+    color:#fff;
+    border-radius: 50%;
+}
+.foodList .bar button span{
+    font-size: 14px;
+}
